@@ -88,7 +88,7 @@ def get_attraction(city: str, weather: str) -> str:
             formatted_results.append(f"- {result['title']}: {result['content']}")
         
         if not formatted_results:
-             return "抱歉，没有找到相关的旅游景点推荐。"
+            return "抱歉，没有找到相关的旅游景点推荐。"
 
         return "根据搜索，为您找到以下信息：\n" + "\n".join(formatted_results)
 
